@@ -56,7 +56,7 @@ extension SettingsViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingTableViewCell.reuseIdentifier, for: indexPath) as? SettingTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.reuseIdentifier, for: indexPath) as? SettingsTableViewCell else {
             fatalError("table cell")
         }
         guard let section = Section(rawValue: indexPath.section) else {
@@ -82,6 +82,7 @@ extension SettingsViewController {
                 cell.accessoryType = .none
             }
         }
+        tableView.rowHeight = 44
         return cell
     }
     

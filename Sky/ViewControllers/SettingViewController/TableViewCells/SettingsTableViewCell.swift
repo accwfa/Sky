@@ -1,5 +1,5 @@
 //
-//  SettingTableViewCell.swift
+//  SettingsTableViewCell.swift
 //  Sky
 //
 //  Created by yuan on 2019/7/19.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SettingTableViewCell: UITableViewCell {
-    static let reuseIdentifier = "SettingTableViewCell"
+class SettingsTableViewCell: UITableViewCell {
+    static let reuseIdentifier = "SettingsTableViewCell"
     @IBOutlet var label: UILabel!
     
     override func awakeFromNib() {

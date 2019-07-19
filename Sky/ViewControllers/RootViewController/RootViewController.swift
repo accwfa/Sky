@@ -149,6 +149,7 @@ extension RootViewController: CurrentWeatherViewControllerDelegate {
     
     func settingsButtonPressed(controller: CurrentWeatherViewController) {
         print("settingsButtonPressed")
+        performSegue(withIdentifier: segueSettings, sender: self)
     }
 }
 
